@@ -2,6 +2,8 @@
 
 The Cube semantic layer that Formbricks 5 requires, packaged as an image.
 
+Pinned to `cubejs/cube:v1.7.49`, with the configuration and data model taken from Formbricks 5.4.5. Formbricks' own compose file runs Cube 1.7.47.
+
 ## Why this exists
 
 Formbricks 5 will not start without Cube — its environment validation fails on
@@ -21,8 +23,8 @@ same two files, so the service is deployable as an image with no mounts.
 
 | Path | Source |
 |------|--------|
-| `conf/cube.js` | `docker/cube/cube.js` from formbricks/formbricks |
-| `conf/model/FeedbackRecords.js` | `docker/cube/schema/FeedbackRecords.js` from the same |
+| `conf/cube.js` | `docker/cube/cube.js` from formbricks/formbricks 5.4.5 |
+| `conf/model/FeedbackRecords.js` | `docker/cube/schema/FeedbackRecords.js` from the same release |
 
 Both are unmodified.
 
