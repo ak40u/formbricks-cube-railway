@@ -1,12 +1,12 @@
 # Formbricks Cube for Railway
 
-The Cube semantic layer that Formbricks 5 requires, packaged as an image.
+The Cube semantic layer that Formbricks 6 requires, packaged as an image.
 
-Pinned to `cubejs/cube:v1.7.49`, with the configuration and data model taken from Formbricks 5.4.5. Formbricks' own compose file runs Cube 1.7.47.
+Pinned to `cubejs/cube:v1.7.49`, with the configuration and data model taken from Formbricks 6.0.2. Formbricks' own compose file runs Cube 1.7.47.
 
 ## Why this exists
 
-Formbricks 5 will not start without Cube — its environment validation fails on
+Formbricks 6 will not start without Cube — its environment validation fails on
 `CUBEJS_API_URL` and `CUBEJS_API_SECRET` before the app boots. Upstream runs Cube
 with its configuration bind-mounted from the repository:
 
@@ -23,7 +23,7 @@ same two files, so the service is deployable as an image with no mounts.
 
 | Path | Source |
 |------|--------|
-| `conf/cube.js` | `docker/cube/cube.js` from formbricks/formbricks 5.4.5 |
+| `conf/cube.js` | `docker/cube/cube.js` from formbricks/formbricks 6.0.2 |
 | `conf/model/FeedbackRecords.js` | `docker/cube/schema/FeedbackRecords.js` from the same release |
 
 Both are unmodified.
